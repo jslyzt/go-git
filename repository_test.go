@@ -22,15 +22,15 @@ import (
 	"github.com/ProtonMail/go-crypto/openpgp/armor"
 	openpgperr "github.com/ProtonMail/go-crypto/openpgp/errors"
 
-	"github.com/go-git/go-git/v5/config"
-	"github.com/go-git/go-git/v5/plumbing"
-	"github.com/go-git/go-git/v5/plumbing/cache"
-	"github.com/go-git/go-git/v5/plumbing/object"
-	"github.com/go-git/go-git/v5/plumbing/storer"
-	"github.com/go-git/go-git/v5/plumbing/transport"
-	"github.com/go-git/go-git/v5/storage"
-	"github.com/go-git/go-git/v5/storage/filesystem"
-	"github.com/go-git/go-git/v5/storage/memory"
+	"github.com/jslyzt/go-git/v5/config"
+	"github.com/jslyzt/go-git/v5/plumbing"
+	"github.com/jslyzt/go-git/v5/plumbing/cache"
+	"github.com/jslyzt/go-git/v5/plumbing/object"
+	"github.com/jslyzt/go-git/v5/plumbing/storer"
+	"github.com/jslyzt/go-git/v5/plumbing/transport"
+	"github.com/jslyzt/go-git/v5/storage"
+	"github.com/jslyzt/go-git/v5/storage/filesystem"
+	"github.com/jslyzt/go-git/v5/storage/memory"
 
 	"github.com/go-git/go-billy/v5"
 	"github.com/go-git/go-billy/v5/memfs"
@@ -3423,7 +3423,7 @@ func BenchmarkPlainClone(b *testing.B) {
 	b.StopTimer()
 	clone := func(b *testing.B) {
 		_, err := PlainClone(b.TempDir(), true, &CloneOptions{
-			URL:          "https://github.com/go-git/go-git.git",
+			URL:          "https://github.com/jslyzt/go-git.git",
 			Depth:        1,
 			Tags:         NoTags,
 			SingleBranch: true,

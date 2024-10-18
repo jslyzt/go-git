@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"io"
 
-	gogitioutil "github.com/go-git/go-git/v5/utils/ioutil"
+	gogitioutil "github.com/jslyzt/go-git/v5/utils/ioutil"
 
-	"github.com/go-git/go-git/v5/plumbing/transport"
+	"github.com/jslyzt/go-git/v5/plumbing/transport"
 )
 
 type MockCommand struct {

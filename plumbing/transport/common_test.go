@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/go-git/go-git/v5/plumbing/protocol/packp/capability"
+	"github.com/jslyzt/go-git/v5/plumbing/protocol/packp/capability"
 
 	. "gopkg.in/check.v1"
 )
@@ -223,7 +223,7 @@ func (s *SuiteCommon) TestFilterUnsupportedCapabilities(c *C) {
 }
 
 func (s *SuiteCommon) TestNewEndpointIPv6(c *C) {
-	// see issue https://github.com/go-git/go-git/issues/740
+	// see issue https://github.com/jslyzt/go-git/issues/740
 	//
 	//	IPv6 host names are not being properly handled, which results in unhelpful
 	//	error messages depending on the format used.

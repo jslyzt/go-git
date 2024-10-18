@@ -3,8 +3,8 @@ package object
 import (
 	"io"
 
-	"github.com/go-git/go-git/v5/plumbing"
-	"github.com/go-git/go-git/v5/plumbing/storer"
+	"github.com/jslyzt/go-git/v5/plumbing"
+	"github.com/jslyzt/go-git/v5/plumbing/storer"
 )
 
 type bfsCommitIterator struct {

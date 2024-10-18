@@ -10,9 +10,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/go-git/go-git/v5/plumbing"
-	"github.com/go-git/go-git/v5/utils/merkletrie"
-	"github.com/go-git/go-git/v5/utils/merkletrie/noder"
+	"github.com/jslyzt/go-git/v5/plumbing"
+	"github.com/jslyzt/go-git/v5/utils/merkletrie"
+	"github.com/jslyzt/go-git/v5/utils/merkletrie/noder"
 
 	"github.com/go-git/go-billy/v5"
 	"github.com/go-git/go-billy/v5/memfs"
